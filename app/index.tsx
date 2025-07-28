@@ -6,38 +6,38 @@ export default function App() {
   const products = [
     {
       id: 1,
-      name: 'calça feminina',
-      img: 'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=500&h=500&fit=crop&auto=format',
+      name: 'Moletom Masculino',
+      img: 'https://tse2.mm.bing.net/th/id/OIP.e4ndofZDTAiX23gzA0kOIgHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3',
     },
     {
       id: 2,
-      name: 'homem de ferro cosplay',
-      img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYQaeJfQHV_xEzV5SILyOS6rE-5XUjJrU0OA&s',
+      name: 'Moletom Feminino',
+      img: 'https://tse4.mm.bing.net/th/id/OIP.O3EGymgCgl_vkjTYOFOWkgAAAA?r=0&rs=1&pid=ImgDetMain&o=7&rm=3',
     },
     {
       id: 3,
-      name: 'homem aranha cosplay',
-      img: 'https://http2.mlstatic.com/D_NQ_NP_695715-MLB75368840336_042024-O-fantasia-homem-aranha-adulto-completa-longe-de-casa.webp',
+      name: 'Camisa Social Masculina',
+      img: 'https://tse3.mm.bing.net/th/id/OIP.zQ3gHUPxMt7aHsC1b1vH5gHaLF?r=0&rs=1&pid=ImgDetMain&o=7&rm=3',
     },
     {
       id: 4,
-      name: 'Estilo Will Smith',
-      img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrqL-YTqwiE7zumfZ_Pw8AHHMv7wc4aDdPez8K53BHvEE3UefVxvWio31hBXzkHywyqeA&usqp=CAU',
+      name: 'Camisa Social Feminina',
+      img: 'https://tse2.mm.bing.net/th/id/OIP.uXPrP-mD68fbNKfAWjXXLQHaJ1?r=0&rs=1&pid=ImgDetMain&o=7&rm=3',
     },
     {
       id: 5,
-      name: 'jaqueta preta',
-      img: 'https://images.unsplash.com/photo-1520975916090-3105956dac38?w=500&h=500&fit=crop&auto=format',
+      name: 'Calça Sarja Jeans Masculina',
+      img: 'https://static.netshoes.com.br/produtos/calca-jogger-jeans-sarja-masculina-com-punho-elastico-casual/04/HZR-0016-004/HZR-0016-004_zoom1.jpg?ts=1661244991',
     },
     {
       id: 6,
-      name: 'Estilo Maluco do pedaço',
-      img: 'https://seligafranca.files.wordpress.com/2013/06/will-smith-and-jazzy-jeff-in-fresh-prince-of-bel-air.jpeg',
+      name: 'Calça Jens Feminina',
+      img: 'https://tse4.mm.bing.net/th/id/OIP.eg6DJ1oBl_D9elFIgSwehwHaNK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3',
     },
   ];
 
   return (
-    <ScrollView className="bg-white p-4">
+    <ScrollView className="bg-slate-300 p-4">
       <View className="mb-8">
         <TouchableOpacity className="self-start mb-4">
           <Icon name="arrow-left" size={20} color="#000" />
@@ -52,7 +52,6 @@ export default function App() {
         </View>
       </View>
 
-      {/* Filtros */}
       <View className="flex-row flex-wrap gap-2 mb-6">
         {['Category', 'Color', 'Size', 'Price', 'More'].map((filter) => (
           <Text
@@ -64,7 +63,6 @@ export default function App() {
         ))}
       </View>
 
-      {/* Grade de Produtos */}
       <View className="flex-row flex-wrap justify-between">
         {products.map((product) => (
           <View
